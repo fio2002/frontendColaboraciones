@@ -1,0 +1,61 @@
+/* General */
+$scale:16px;                    /* main font size */
+$borderRadius:10px;             /* border radius of layout element e.g. card, sidebar */
+$transitionDuration:.2s;        /* transition duration of layout elements e.g. sidebar, overlay menus */
+
+/*@import '../../../../../assets/layout/styles/layout/styles_ramo';*/
+
+/*paleta de colores*/
+$verde-limon: #8bca24;
+$oscuro-claro: #292929;
+$verde-oscuro:#4caf50;
+$rojo-alerta: #ff3636;
+$gris-claro: #707070;
+
+/*menu*/
+$color-btn-background-menu: $verde-limon;
+
+/*Botones Primary*/
+
+$color-btnPrimary-border: $verde-limon;
+$color-btnPrimary-background: $verde-limon;
+$color-btnPrimary-text: white;
+
+/*Botones Alert*/
+
+$color-btnAlert-border: $rojo-alerta;
+$color-btnAlert-background: $rojo-alerta;
+$color-btnAlert-text: white;
+
+/*Botones Alert - evento hover*/
+
+$color-btnAlert-border-hover: $gris-claro;
+$color-btnAlert-background-hover: $gris-claro;
+$color-btnAlert-text-hover: white;
+
+/*Botones Primary - evento hover*/
+
+$color-btnPrimary-border-hover: $verde-limon;
+$color-btnPrimary-background-hover: $verde-limon;
+$color-btnPrimary-text-hover: white;
+
+/*Botones Secundary*/
+
+$color-btnSecundary-border: #7c7c7c;
+$color-btnSecundary-background: #7c7c7c;
+$color-btnSecundary-text: white;
+
+/*Botones Secundary - hover*/
+
+$color-btnSecundary-border-hover: rgb(177, 177, 177);
+$color-btnSecundary-background-hover: rgb(177, 177, 177);
+$color-btnSecundary-text-hover: black;
+
+/*top bar*/
+$color-top-bar-background:black;
+
+$color-texto-blanco: white;
+
+/*table*/
+$table-head-background : $verde-oscuro;
+$table-head-text:white;

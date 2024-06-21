@@ -1,0 +1,47 @@
+@import './variables';
+
+.btnPrimary {
+    border-color: $color-btnPrimary-background;
+    background-color: $color-btnPrimary-background;
+    color: $color-btnPrimary-text;
+}
+
+.btnPrimary:hover{
+    border-color: $color-btnPrimary-background-hover;
+    background-color: $color-btnPrimary-background-hover;
+    color: $color-btnPrimary-text-hover;
+}
+
+.btnSecondary {
+    border-color: $color-btnSecundary-background;
+    background-color: $color-btnSecundary-background;
+    color: $color-btnSecundary-text;
+}
+
+.btnSecondary:hover {
+    border-color: $color-btnSecundary-background-hover;
+    background-color: $color-btnSecundary-background-hover;
+    color: $color-btnSecundary-text-hover;
+}
+
+
+.t-head-style{
+    background-color: $table-head-background !important;
+    color: $table-head-text !important;
+}
+
+.t-body-style{
+    border-color: black !important;
+}
+
+.btnAlert{
+    border-color: $color-btnAlert-border;
+    background-color: $color-btnAlert-background;
+    color: $color-btnAlert-text;
+}
+
+.btnAlert:hover {
+    border-color: $color-btnAlert-border-hover;
+    background-color: $color-btnAlert-background-hover;
+    color: $color-btnAlert-text-hover;
+}

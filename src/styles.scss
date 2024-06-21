@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/* Importar Bootstrap CSS */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    font-family: 'Poppins', sans-serif;
+  
+  
+    @media (max-width: 768px) {
+      padding-top: 3.9375rem;
+    }
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidenav-container {
+    flex: 1;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  mat-sidenav-content {
+    padding: 20px;
+  }
+  
+  .content {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-toolbar {
+    padding: 0 10px;
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  
+  mat-toolbar span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    mat-sidenav {
+      width: 200px;
+    }
+   .content {
+      padding: 10px;
+    }
+    mat-toolbar {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    mat-sidenav {
+      width: 150px;
+    }
+   .content {
+      padding: 2px;
+    }
+    mat-toolbar {
+      padding: 0 5px;
+    }
+  }
+
+ 
+  .sticky-toolbar {
+    position: sticky;
+    top: 0;
+  }
