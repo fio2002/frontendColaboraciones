@@ -24,13 +24,22 @@ const routes: Routes = [
     children: [
 
       {
-        path: 'home', 
-        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) 
+        path: 'home',
+        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
       },
-     
+
+      {
+        path:'user',
+        loadChildren:()=> import('./modules/usuarios/usuarios.module').then(m=> m.UsuariosModule)
+      },
+      {
+        path: 'Gestion',
+        loadChildren:()=>import('./modules/home/home.module').then(m=>m.HomeModule)
+      }
+
     ]
   },
-  
+
   {
     path: '',
     redirectTo: 'acceso',

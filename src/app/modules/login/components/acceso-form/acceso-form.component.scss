@@ -1,10 +1,8 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  padding-top: 6.5rem;
-
-  @media (max-width: 768px) {
-    padding-top: 3.9375rem;
-  }
+.container{
+padding-top: 16rem;
+}
+.text-extra-small {
+  font-size: .75rem;
 }
 
 .text-extra-small {
@@ -19,7 +17,7 @@ form {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
-  
+
   button {
     width: 100%;
   }
@@ -31,7 +29,7 @@ form {
     font-size: 16px;
     color: #333;
   }
-  
+
   select:focus {
     border-color: #007bff;
     outline: none;

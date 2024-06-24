@@ -3,65 +3,67 @@
 @import "primeng/resources/primeng.css";
 /* Importar Bootstrap CSS */
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "primeicons/primeicons.css";
 
-body {
-    font-family: 'Poppins', sans-serif;
-  
-  
-    @media (max-width: 768px) {
-      padding-top: 3.9375rem;
-    }
-  }
-  
   .main-content {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    // flex-direction: column;
+    height: 92vh;
+    // overflow: hidden;
   }
-  
+
   .sidenav-container {
     flex: 1;
   }
-  
+
   mat-sidenav {
-    width: 250px;
+    width: 100%;
   }
-  
+
   mat-sidenav-content {
-    padding: 20px;
+    padding: 3px;
   }
-  
+
   .content {
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
+    padding: 12px;
+    background-color: #ffe4bb59;
+    border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+// @media (max-width: 100px) {
+//     .content {
+//         padding: 16px;
+//     }
+// }
+
   mat-toolbar {
     padding: 0 10px;
     background-color: #3f51b5;
     color: #fff;
   }
-  
+
   mat-toolbar span {
     font-size: 18px;
     font-weight: bold;
   }
-  
+
   @media (max-width: 768px) {
     mat-sidenav {
-      width: 200px;
+      width: 100px;
     }
    .content {
-      padding: 10px;
+      padding: 8px;
     }
     mat-toolbar {
       padding: 0 10px;
     }
   }
-  
+
   @media (max-width: 480px) {
     mat-sidenav {
       width: 150px;
@@ -74,8 +76,10 @@ body {
     }
   }
 
- 
+
   .sticky-toolbar {
+    z-index: 1000;
     position: sticky;
     top: 0;
   }
+

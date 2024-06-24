@@ -1,2 +1,65 @@
-<h1>Bienvenido al Home</h1>
-<p>Contenido del componente Home.</p>
+<form action="">
+  <h5 class="m-3">Colaboraciones</h5>
+  <p-divider />
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 ">
+        <p-iconField iconPosition="left" >
+          <p-inputIcon styleClass="pi pi-search"></p-inputIcon>
+          <input type="text" pInputText placeholder="Buscar por Código" class="search-input">
+        </p-iconField>
+
+      </div>
+      <div class="col-md-4 .offset-md-3">
+          <p-dropdown
+          [options]="cities"
+          [(ngModel)]="selectedCity"
+          optionLabel="name"
+          placeholder="Tipo de Documento"
+            class="w-full">
+          </p-dropdown>
+
+      </div>
+      <div class="col-md-4 .offset-md-3">
+
+          <p-calendar
+          [iconDisplay]="'input'"
+          [showIcon]="true"
+          inputId="icondisplay"
+          />
+
+      </div>
+    </div>
+  </div>
+
+  <p-divider />
+  <h5 class="m-3">Desiones</h5>
+  <p-card header="Simple Card">
+
+    <p class="m-0">
+      Lorem ipsum dolor sit amet...
+    </p>
+  </p-card>
+  <h5 class="m-3">Resoluciones</h5>
+  <p-card header="Simple Card">
+
+    <p class="m-0">
+      Lorem ipsum dolor sit amet...
+    </p>
+  </p-card>
+  <h5 class="m-3">Resoluciones</h5>
+  <p-card header="Simple Card">
+
+    <p class="m-0">
+      Lorem ipsum dolor sit amet...
+    </p>
+  </p-card>
+  <p-divider />
+  <p-card header="Simple Card">
+
+    <p class="m-0">
+      Lorem ipsum dolor sit amet...
+    </p>
+  </p-card>
+</form>

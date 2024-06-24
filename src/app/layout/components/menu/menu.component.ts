@@ -12,27 +12,24 @@ export class MenuComponent implements OnInit {
 
   constructor(public layoutService: LayoutService) {
     const desiredOrder = [
+      'Colaboraciones',
       'Usuarios',
-      'Perfiles',
-      'Punto de Balanza',
-      'Proveedores',
-      'Ticket de Balanza',
-      'Cuarteo',
-      'Laboratorio',
-      'Valorización',
-      'Orden de pago'
+      'Gestión Publicación'
+
     ];
 
     this.items = [
+
+      { label: 'Colaboraciones', icon: 'group', link: '/admin/home' },
       { label: 'Usuarios', icon: 'person', link: '/admin/user' },
-      { label: 'Perfiles', icon: 'group', link: '/admin/role' },
-      { label: 'Punto de Balanza', icon: 'balance', link: '/admin/ticket' },
-      { label: 'Proveedores', icon: 'local_shipping', link: '/admin/provider' },
-      { label: 'Ticket de Balanza', icon: 'receipt', link: '/admin/ticket-balance' },
-      { label: 'Cuarteo', icon: 'content_cut', link: '/admin/cuarteo' },
-      { label: 'Laboratorio', icon: 'science', link: '/admin/laboratory' },
-      { label: 'Valorización', icon: 'attach_money', link: '/admin/valorization' },
-      { label: 'Orden de pago', icon: 'payment', link: '/admin/pay-order' }
+      { label: 'Gestión Publicación', icon: 'balance', link: '/admin/Gestion' },
+
+      // { label: 'Proveedores', icon: 'local_shipping', link: '/admin/provider' },
+      // { label: 'Ticket de Balanza', icon: 'receipt', link: '/admin/ticket-balance' },
+      // { label: 'Cuarteo', icon: 'content_cut', link: '/admin/cuarteo' },
+      // { label: 'Laboratorio', icon: 'science', link: '/admin/laboratory' },
+      // { label: 'Valorización', icon: 'attach_money', link: '/admin/valorization' },
+      // { label: 'Orden de pago', icon: 'payment', link: '/admin/pay-order' }
     ];
 
     this.items.sort((a, b) => {
