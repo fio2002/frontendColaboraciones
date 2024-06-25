@@ -13,9 +13,10 @@
       </div>
       <div class="col-md-4 .offset-md-3">
           <p-dropdown
-          [options]="cities"
-          [(ngModel)]="selectedCity"
+          [options]="doc"
+          [(ngModel)]="selectedoc"
           optionLabel="name"
+          [ngModelOptions]="{ standalone: true }"
           placeholder="Tipo de Documento"
             class="w-full">
           </p-dropdown>
