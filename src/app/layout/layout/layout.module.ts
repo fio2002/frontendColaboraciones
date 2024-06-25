@@ -23,6 +23,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
+import { ToolbarModule } from 'primeng/toolbar';
+import { AvatarModule } from 'primeng/avatar';
 @NgModule({
   declarations: [
     AppLayoutTemplate,
@@ -51,6 +53,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatDividerModule,
     MatListModule,
     MatMenuModule,
+    ToolbarModule, AvatarModule
   ],
   exports: [AppLayoutTemplate]
 })

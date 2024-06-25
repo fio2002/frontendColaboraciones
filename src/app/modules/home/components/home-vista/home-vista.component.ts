@@ -11,12 +11,12 @@ interface City {
   styleUrls: ['./home-vista.component.scss']
 })
 export class HomeVistaComponent implements OnInit {
-  cities: City[] = [];
-  selectedCity: City | undefined;
+  doc: City[] = [];
+  selectedoc: City | undefined;
   date2: Date | undefined;
 
   ngOnInit(): void {
-    this.cities = [
+    this.doc = [
       { name: 'Decisiones', code: '1' },
       { name: 'Resoluciones', code: '2' },
       { name: 'Documentos Tecnicos', code: '3' }

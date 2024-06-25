@@ -1,5 +1,18 @@
-<div class="container">
-  <form  [formGroup]="loginForm" (ngSubmit)="save()">
+<div class="p-5">
+  <form [formGroup]="loginForm" (ngSubmit)="save()">
+    <div className="flex justify-content-center">
+      <img src="https://www.uasb.edu.bo/wp-content/uploads/2018/08/comunidad_andina-300x200.png" alt="Image" width="150">
+
+    </div>
+    <div className="flex justify-content-center">
+      <h2 className="text-gray-700">Bienvenido</h2>
+    </div>
+
+    <div className="flex justify-content-center">
+      <p className="text-gray-700" [style]="">
+        Inicio de sesión: Acceda con sus credenciales
+      </p>
+    </div>
     <div class="mb-3">
       <label for="cuenta" class="form-label">Cuenta</label>
       <input type="text" class="form-control" id="cuenta" formControlName="cuenta">

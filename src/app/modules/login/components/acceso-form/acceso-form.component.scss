@@ -1,5 +1,11 @@
-.container{
-padding-top: 16rem;
+.container {
+  padding-top: 16rem; /* Maintain the padding for larger screens */
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .container {
+    padding-top: 2rem; /* Reduced padding for smaller screens */
+  }
 }
 .text-extra-small {
   font-size: .75rem;
