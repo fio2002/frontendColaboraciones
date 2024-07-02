@@ -26,9 +26,9 @@
 
   .content {
     padding: 12px;
-    background-color: #ffe4bb59;
+    background-color: rgba(10, 74, 134, 20%);
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // background-color: rgb(10, 74, 134);
     max-width: 100%;
     box-sizing: border-box;
 
@@ -43,7 +43,7 @@
 
   mat-toolbar {
     padding: 0 10px;
-    background-color: #3f51b5;
+    background-color: rgb(10, 74, 134);
     color: #fff;
   }
 

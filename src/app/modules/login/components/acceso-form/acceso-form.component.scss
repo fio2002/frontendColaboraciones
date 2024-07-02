@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // .container {
 //   padding-top: 16rem; /* Maintain the padding for larger screens */
 // }
@@ -23,21 +24,74 @@ form {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
+=======
+html, body {
+  height: 100%;
+  margin: 0;
 
-  button {
-    width: 100%;
-  }
-  select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    color: #333;
-  }
+}
+.col-md-6 .image {
+  background-image: url('../../../../../assets/img/LogoSGCAN (horizontal).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.btn{
+  background-color: rgb(10, 74, 134);
+}
+.form-container .logo {
+  background-image: url('../../../../../assets/img/LogoSGCAN (vertical).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8rem; /* Ajusta la altura según tus necesidades */
+  width: 10rem; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto 1rem;
+}
 
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.left-side img {
+  width: 150px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+>>>>>>> 67d00046ba4990e58579e0dcdfb8bbc3df47cbef
+
+.form-container img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 100px;
+}
+
+<<<<<<< HEAD
   select:focus {
     border-color: #007bff;
     outline: none;
   }
 
+=======
+h5, p, a {
+  text-align: center;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+}
+>>>>>>> 67d00046ba4990e58579e0dcdfb8bbc3df47cbef

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-acceso',
   templateUrl: './acceso.component.html',
-  styleUrl: './acceso.component.scss'
+  styleUrls: ['./acceso.component.scss']
 })
 export class AccesoComponent {
 

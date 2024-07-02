@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div _ngcontent-ng-c360588619="" class="p-6 container" style="margin-bottom: 100px;margin-top: 100px;">
   <form [formGroup]="loginForm" (ngSubmit)="save()">
     <div _ngcontent-ng-c4176460062="" class="" style="padding-left: 6rem;padding-right: 8rem;">
@@ -38,4 +39,40 @@
       <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Ingresar</button>
     </div>
   </form>
+=======
+<div class="container ">
+  <div class="row h-100">
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white">
+      <div class="image"></div>
+      <!-- <img src="/assets/img/LogoSGCAN (horizontal).png" alt="Image" width="150"> -->
+      <!-- <h2>COMUNIDAD ANDINA</h2>
+      <h4>SECRETARÍA GENERAL</h4> -->
+    </div>
+    <div class="col-md-6 d-flex justify-content-center ">
+      <form [formGroup]="loginForm" (ngSubmit)="save()" class="form-container bg-white p-4 rounded shadow">
+        <div class="text-center mb-3">
+        <div class="logo"></div>
+        </div>
+        <h5 class="text-center">Bienvenido</h5>
+        <p class="text-center">Inicio de sesión: Acceda con sus credenciales</p>
+        <div class="mb-3">
+          <label for="cuenta" class="form-label">Cuenta</label>
+          <input type="text" class="form-control" id="cuenta" formControlName="cuenta">
+        </div>
+        <div class="mb-3">
+          <label for="clave" class="form-label">Clave</label>
+          <input type="password" class="form-control" id="clave" formControlName="clave">
+        </div>
+        <!-- <div class="mb-3">
+          <label for="company" class="form-label">Compañía</label>
+          <p-dropdown [options]="companies" optionLabel="name" formControlName="company" [showClear]="true" placeholder="Seleccione una compañía"></p-dropdown>
+        </div> -->
+        <div class="text-center">
+          <a href="#">¿Olvidó su contraseña?</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mt-3" [disabled]="!loginForm.valid">Iniciar sesión</button>
+      </form>
+    </div>
+  </div>
+>>>>>>> 67d00046ba4990e58579e0dcdfb8bbc3df47cbef
 </div>

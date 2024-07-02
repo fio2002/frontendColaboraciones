@@ -11,23 +11,26 @@ import { IUser } from '../../../../core/interfaces/user.model';
 })
 export class AccesoFormComponent {
   loginForm: FormGroup;
-  user: IUser | null = null; 
+  user: IUser | null = null;
   formValid = false;
 
-  companies = [
-    { name: 'Compañía 1', code: '1' },
-    { name: 'Compañía 2', code: '2' }
-  ];
+  // companies = [
+  //   { name: 'Compañía 1', code: '1' },
+  //   { name: 'Compañía 2', code: '2' }
+  // ];
+  // private staticUsers = [
+  //   { cuenta: 'admin', clave: 'admin123', company: '1' },
+  //   { cuenta: 'user', clave: 'user123', company: '2' }
+  // ];
   private staticUsers = [
-    { cuenta: 'admin', clave: 'admin123', company: '1' },
-    { cuenta: 'user', clave: 'user123', company: '2' }
+    { cuenta: 'admin', clave: 'admin123'  },
+    { cuenta: 'user', clave: 'user123' }
   ];
-
   constructor(private fb: FormBuilder, private router: Router) {
     this.loginForm = this.fb.group({
       cuenta: ['', Validators.required],
       clave: ['', Validators.required],
-      company: ['', Validators.required]
+      // company: ['', Validators.required]
     });
   }
 
@@ -46,7 +49,7 @@ export class AccesoFormComponent {
     if (this.user) {
       // Verificar credenciales ingresadas con las credenciales estáticas
       const credencialesValidas = this.staticUsers.find(u =>
-        u.cuenta === this.user?.cuenta && u.clave === this.user?.clave && u.company === this.user?.company.code
+        u.cuenta === this.user?.cuenta && u.clave === this.user?.clave
       );
 
       console.log('staticUsers:', this.staticUsers); // Impresión corregida en consola
