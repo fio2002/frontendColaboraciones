@@ -1,8 +1,17 @@
-<p-panel header="Header" >
-  <h5 style="display: inline-block;">Gestionar Usuario</h5>
+<p-panel header=" Gestionar Usuario"
+
+>
+
   <button mat-icon-button>
     <mat-icon>add</mat-icon>
   </button>
+
+  <p-iconField iconPosition="left">
+    <p-inputIcon styleClass="pi pi-search"></p-inputIcon>
+    <input type="text" pInputText placeholder="Buscar por Código" class="search-input">
+  </p-iconField>
+  <p-divider></p-divider>
+  <app-usuario-form></app-usuario-form>
 </p-panel>
 
 <!-- <div class="container">
@@ -11,10 +20,6 @@
     <mat-icon>add</mat-icon>
   </button>
 </div> -->
-<p-divider></p-divider>
-<p-iconField iconPosition="left">
-  <p-inputIcon styleClass="pi pi-search"></p-inputIcon>
-  <input type="text" pInputText placeholder="Buscar por Código" class="search-input">
-</p-iconField>
-<p-divider></p-divider>
-<app-usuario-form></app-usuario-form>
+
+
+

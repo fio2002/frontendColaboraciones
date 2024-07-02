@@ -1,42 +1,61 @@
+html, body {
+  height: 100%;
+  margin: 0;
+
+}
+.col-md-6 .image {
+  background-image: url('../../../../../assets/img/LogoSGCAN (horizontal).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.btn{
+  background-color: rgb(10, 74, 134);
+}
+.form-container .logo {
+  background-image: url('../../../../../assets/img/LogoSGCAN (vertical).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8rem; /* Ajusta la altura según tus necesidades */
+  width: 10rem; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto 1rem;
+}
+
 .container {
-  padding-top: 16rem; /* Maintain the padding for larger screens */
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
-  .container {
-    padding-top: 2rem; /* Reduced padding for smaller screens */
-  }
-}
-.text-extra-small {
-  font-size: .75rem;
-}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.text-extra-small {
-  font-size: .75rem;
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  }
+.left-side img {
+  width: 150px;
+}
 
-  button {
-    width: 100%;
-  }
-  select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    color: #333;
-  }
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
 
-  select:focus {
-    border-color: #007bff;
-    outline: none;
-  }
+.form-container img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 100px;
+}
+
+h5, p, a {
+  text-align: center;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+}
