@@ -1,25 +1,25 @@
-.container {
-  padding-top: 16rem; /* Maintain the padding for larger screens */
-}
+// .container {
+//   padding-top: 16rem; /* Maintain the padding for larger screens */
+// }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
-  .container {
-    padding-top: 2rem; /* Reduced padding for smaller screens */
-  }
-}
-.text-extra-small {
-  font-size: .75rem;
-}
+// @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+//   .container {
+//     padding-top: 2rem; /* Reduced padding for smaller screens */
+//   }
+// }
+// .text-extra-small {
+//   font-size: .75rem;
+// }
 
-.text-extra-small {
-  font-size: .75rem;
-}
+// .text-extra-small {
+//   font-size: .75rem;
+// }
 
 form {
     max-width: 400px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: #f8f9fa;
+    background-color: #c9a81f;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
@@ -40,3 +40,4 @@ form {
     border-color: #007bff;
     outline: none;
   }
+

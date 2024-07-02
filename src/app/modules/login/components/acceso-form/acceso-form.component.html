@@ -1,37 +1,41 @@
-<div class="p-5">
+<div _ngcontent-ng-c360588619="" class="p-6 container" style="margin-bottom: 100px;margin-top: 100px;">
   <form [formGroup]="loginForm" (ngSubmit)="save()">
-    <div className="flex justify-content-center">
+    <div _ngcontent-ng-c4176460062="" class="" style="padding-left: 6rem;padding-right: 8rem;">
+      <!-- Aquí centramos el logo -->
       <img src="https://www.uasb.edu.bo/wp-content/uploads/2018/08/comunidad_andina-300x200.png" alt="Image" width="150">
-
-    </div>
-    <div className="flex justify-content-center">
-      <h2 className="text-gray-700">Bienvenido</h2>
     </div>
 
-    <div className="flex justify-content-center">
-      <p className="text-gray-700" [style]="">
+    <div class="flex justify-content-center mb-4">
+      <h5 class="text-gray-700">Bienvenido</h5>
+    
+
+
+      <p class="text-gray-700">
         Inicio de sesión: Acceda con sus credenciales
       </p>
     </div>
+
     <div class="mb-3">
       <label for="cuenta" class="form-label">Cuenta</label>
       <input type="text" class="form-control" id="cuenta" formControlName="cuenta">
     </div>
+
     <div class="mb-3">
       <label for="clave" class="form-label">Clave</label>
       <input type="password" class="form-control" id="clave" formControlName="clave">
     </div>
 
-    <div class="mb-3">
+    <div class="mb-3 flex justify-content-center">
       <label for="company" class="form-label">Compañía</label>
-      <div class="justify-content-center">
+      <div>
         <p-dropdown [options]="companies" optionLabel="name" formControlName="company" [showClear]="true"
           placeholder="Seleccione una compañía">
         </p-dropdown>
-        <!-- <button (click)="pintar()">test</button> -->
       </div>
     </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Ingresar</button>
-  </form>
 
+    <div class="flex justify-content-center">
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Ingresar</button>
+    </div>
+  </form>
 </div>
